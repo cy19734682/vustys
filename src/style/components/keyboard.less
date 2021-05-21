@@ -1,0 +1,66 @@
+.keyboard {
+  height: 240px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: white;
+  z-index: 999;
+
+  .done {
+    height: 40px;
+    background: #f9f9f9;
+    padding-right: 10px;
+    border: .5px none #d6d6d6;
+    border-top-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .text {
+      color: #007eff;
+    }
+  }
+
+  .list {
+    height: 200px;
+
+    .key:active {
+      background: #e2e2e2;
+    }
+
+    .key {
+      height: 25%;
+      width: calc(~"33.33% - 1px");
+      float: left;
+      border-right: .5px solid #d6d6d6;
+      border-top: .5px solid #d6d6d6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+    }
+
+    .key:nth-child(3n) {
+      border-right: none;
+    }
+  }
+
+  .del {
+    font-size: 28px;
+  }
+
+  .keyboard .list .key i.icon-keyboard-delete,
+  .keyboard .list .key i.icon-dot {
+    position: inherit;
+    right: inherit;
+    top: inherit;
+    margin-top: inherit;
+    display: inherit;
+    font-size: 16px;
+    color: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    font-style: inherit;
+  }
+}

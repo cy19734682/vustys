@@ -1,0 +1,47 @@
+.keyboardInput {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+  user-select: none;
+  width: 100%;
+  height: inherit;
+  line-height: 1;
+  font-size: 16px;
+  color: #000;
+  border: none;
+  .input-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    line-height: inherit;
+    .label {
+      color: #333;
+    }
+    .content {
+      display: flex;
+      position: relative;
+      height: inherit;
+      width: 100%;
+      line-height: initial;
+      .input {
+        font-size: inherit;
+        color: #000;
+      }
+
+      .cursor {
+        background-color: #000;
+        width: 2px;
+        height: calc(~"100% - 5px");
+      }
+
+      .placeholder {
+        color: #ccc;
+        width: 100%;
+        line-height: inherit;
+        height: inherit;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}

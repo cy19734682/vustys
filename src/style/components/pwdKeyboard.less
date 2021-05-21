@@ -1,0 +1,223 @@
+.h-maskbg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 998;
+  background: rgba(0, 0, 0, .5);
+}
+.h-password-keyboard-component {
+  .h-pkc-content {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 350px;
+    background: #fff;
+    z-index: 999;
+  }
+
+  .h-pkc-header {
+    height: 42px;
+    line-height: 42px;
+    padding: 0;
+    border-bottom: 1px solid #EDEDED;
+    border-top: 1px solid #EDEDED;
+    position: relative;
+  }
+
+  .h-pkc-title {
+    margin: 0;
+    font-weight: normal;
+    font-size: 17px;
+    color: #333;
+    text-align: center
+  }
+
+  .cancel-btn {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 15px;
+    color: #4371E0;
+    padding: 0 15px;
+  }
+
+  .ok-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 15px;
+    color: #4371E0;
+    padding: 0 15px;
+  }
+
+  .cancel-btn:active ,
+  .ok-btn:active {
+    background-color: #D1D5DB
+  }
+
+  .password-show-box {
+    width: 90%;
+    height: 44px;
+    display: flex;
+    margin: 25px auto 7px;
+    border: 1px solid #999;
+    border-radius: 4px
+  }
+
+  .password-show-box span {
+    height: 44px;
+    width: 44px; /* flex: 1; border: 1px solid #999; border-right:none; */
+    position: relative;
+  }
+
+  /* .password-show-box span:last-child{border-right: 1px solid #999; border-top-right-radius: 4px; border-bottom-right-radius: 4px }
+  .password-show-box span:first-child{ border-top-left-radius: 4px; border-bottom-left-radius: 4px } */
+  .password-show-box span.on:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -6px 0 0 -6px;
+    border-radius: 6px;
+  }
+
+  .forget-box {
+    text-align: right;
+    width: 90%;
+    margin: 0 auto
+  }
+
+  .forget-btn {
+    display: inline-block;
+    line-height: 28px;
+    padding: 0 0 0 10px;
+    color: #6A96C9;
+    font-size: 15px
+  }
+
+  .forget-btn:active {
+    color: #4371E0;
+    text-decoration: underline;
+  }
+
+  .h-keyboard {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 58%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    background: #E5E5E5;
+  }
+
+  .h-keyboard span {
+    display: table;
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    line-height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: 25px;
+    vertical-align: middle;
+    color: #000
+  }
+
+  .h-keyboard span:active {
+    background-color: #B6BDCC
+  }
+
+  .h-keyboard span i {
+    font-style: normal;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .h-keyboard .delone {
+    position: relative;
+  }
+
+  .h-keyboard .delone img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -8px 0 0 -13px;
+    width: auto;
+  }
+
+  .h-keyboard .keybg {
+    background-color: #D1D5DB
+  }
+
+  .h-keyboard-table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+  }
+
+  .h-keyboard-table td {
+    width: 25%;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #E5E5EF;
+  }
+
+  .h-keyboard-table td:first-child {
+    border-left: none;
+  }
+
+  .h-keyboard-table td:last-child {
+    border-right: none;
+  }
+
+  .h-keyboard-table-abc {
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  .h-keyboard-table-abc td {
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #e5e5ef;
+  }
+
+  .h-keyboard-table-abc td:first-child {
+    border-left: none;
+  }
+
+  .h-keyboard-table-abc td:last-child {
+    border-right: none;
+  }
+
+  .h-keyboard-table-abc td span {
+    display: table;
+    background-color: #fff;
+    text-align: center;
+    height: 100%;
+    line-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-size: 18px;
+    vertical-align: middle;
+    color: #000;
+  }
+
+  .h-keyboard-table-abc td i {
+    font-style: normal;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
